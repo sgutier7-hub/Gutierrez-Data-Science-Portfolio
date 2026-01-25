@@ -5,6 +5,7 @@ This portfolio presents my completed data science projects and provides an overv
 ## Project Table of Contents
 
 Projects in this portfolio are organized into the following sections:
-- `eda/` — Exploratory Data Analysis projects, including data cleaning, visualization, and insight
-- `visualizations/` — Focused visual analyses and data storytelling projects  
-- `models/` — Statistical and machine learning models 
+
+- **[Eda](./eda/)** — Exploratory data analysis  
+- **[Visualizations](./visualizations/)** — Data visualization and storytelling  
+- **[Models](./models/)** — Statistical and machine learning models  
