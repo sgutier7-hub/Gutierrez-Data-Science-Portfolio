@@ -15,4 +15,6 @@ Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic
 
 ## How to Run the App
 
+- Make sure to have Streamlit installed: 
+    - $ pip install streamlit
 - Streamlit run main.py
