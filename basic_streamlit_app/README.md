@@ -15,4 +15,4 @@ Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic
 
 ## How to Run the App
 
-- streamlit run app.py
+- Streamlit run main.py
