@@ -9,11 +9,18 @@ My goals where to understand:
 - How RD growth compares to overall economic growth  
 
 ## Dataset: 
-`fed_rd_year&gdp.csv`
 
-Includes:
-- Yearly RD spending by department  
-- GDP values  
+This project uses the **Federal R&D Budgets dataset** from TidyTuesday:  
+https://github.com/rfordatascience/tidytuesday/tree/main/data/2019/2019-02-12  
+- `fed_rd_year&gdp.csv`
+
+The dataset reports annual U.S. federal RD spending by department alongside GDP, allowing for both agency level comparisons and economy wide context.
+
+### Pre-processing
+
+The original data was structured in a wide format, with each department as its own column. I reshaped it into tidy form using `pandas.melt()`, creating a dataset where each row represents a single department’s spending in a given year. I then standardized variables (`year`, `department`, `rd_spending`, `gdp`), cleaned numeric formatting, and generated key measures including RD as a share of GDP and growth rates.
+
+These steps make the data easier to compare across departments and over time, while allowing for more meaningful interpretation beyond just spending totals.
 
 ## Steps
 ### 1. Data Cleaning (Tidy Data)
@@ -48,13 +55,15 @@ I created:
 
 ## How to Run
 1. install pandas, matplotlib, and seaborn
-2. Run: main-1.ipynb
+2. Upload: fed_rd_year&gdp.csv
+3. Run: main-1.ipynb
+
 
 # References: 
-- [Tidy Data Cheat Sheet (PDF)](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [Pandas Cheat Sheet (PDF)](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 - [Tidy Data Paper by Hadley Wickham](https://vita.had.co.nz/papers/tidy-data.pdf)
-- [Visualization Choices](https://www.data-to-viz.com/)
-- [Visualization Colors](https://xkcd.com/color/rgb/)
+- [Data to Viz](https://www.data-to-viz.com/)
+
 
 
 
