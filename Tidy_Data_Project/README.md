@@ -42,8 +42,14 @@ Added key variables for analysis:
 ### 3. Analysis & Visualizations
 I created:
 - Line graphs (RD by department over time)  
-- Top 5 department comparisons  
-- Growth comparisons (RD vs GDP)  
+- Top 5 department comparisons
+- Growth comparisons (RD vs GDP)
+ 
+<img width="613" height="448" alt="Screenshot 2026-03-21 at 10 42 06 PM" src="https://github.com/user-attachments/assets/9d6ac2d3-5678-47b7-9759-5031be12a690" />
+
+<img width="601" height="447" alt="Screenshot 2026-03-21 at 10 41 39 PM" src="https://github.com/user-attachments/assets/da797f0a-a752-4390-a43f-af861acf8f3c" />
+
+
 
 ## Key Insights
 
