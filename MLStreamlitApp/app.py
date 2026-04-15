@@ -411,7 +411,8 @@ with tab3:
 # LOGISTIC REGRESSION
 
 # Run logistic regression only if the user selected it
-    if "Logistic Regression" in model_choices and problem_type == "Classification":
+    if "Logistic Regression" in model_choices and problem_type == "Classification" and y.nunique() == 2:
+        
         st.subheader("Logistic Regression")
 # Create and train the logistic regression model
         model = LogisticRegression(max_iter=1000)
@@ -473,6 +474,9 @@ with tab3:
 
         st.write("Top coefficients")
         st.dataframe(coef_df.head(10))
+        
+    elif "Logistic Regression" in model_choices:
+        st.warning("Logistic Regression in this app is set up for binary classification only.")
 
 # DECISION TREE
 
