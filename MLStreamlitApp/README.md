@@ -82,6 +82,7 @@ You can adjust key settings and immediately see how they affect results:
 - Optionally run **GridSearchCV** to automatically find better parameters  
 
 This turns tuning into something you can *see*, not just guess.
+
 <img width="287" height="239" alt="Screenshot 2026-04-14 at 10 57 10 PM" src="https://github.com/user-attachments/assets/5a3ace63-ddb4-44a5-b93f-73b1bb979e07" />
 
 ---
