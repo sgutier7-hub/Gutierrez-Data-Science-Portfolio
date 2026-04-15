@@ -38,7 +38,9 @@ Before any modeling happens, the app helps you understand your dataset:
 - Preview your data and inspect its structure  
 - Identify missing values and column types  
 - Visualize your target variable (bar chart for classification, histogram for regression)  
-- Explore relationships between variables with a correlation heatmap  
+- Explore relationships between variables with a correlation heatmap
+
+<img width="704" height="385" alt="Screenshot 2026-04-14 at 10 51 38 PM" src="https://github.com/user-attachments/assets/bfc862a4-e975-46f5-8b27-c890e8ea51f8" />
 
 ---
 
@@ -50,6 +52,8 @@ The app suggests whether your task is:
 - **Regression**: when your target is continuous and numeric  
 
 You can override this at any time, but the goal is to help you recognize the difference and why it matters.
+
+<img width="288" height="92" alt="Screenshot 2026-04-14 at 10 53 56 PM" src="https://github.com/user-attachments/assets/aa7cc503-9ff4-4b37-9fbe-5a84884e438c" />
 
 ---
 
@@ -64,6 +68,8 @@ Rather than overwhelming you with options, the app focuses on a small set of fou
 
 Each model is chosen because it teaches something different about how machine learning works.
 
+<img width="276" height="297" alt="Screenshot 2026-04-14 at 10 55 28 PM" src="https://github.com/user-attachments/assets/3906decc-9f86-4e54-a178-51d4637115f6" />
+
 ---
 
 ### 🖥️ Interactive Model Tuning
@@ -76,6 +82,7 @@ You can adjust key settings and immediately see how they affect results:
 - Optionally run **GridSearchCV** to automatically find better parameters  
 
 This turns tuning into something you can *see*, not just guess.
+<img width="287" height="239" alt="Screenshot 2026-04-14 at 10 57 10 PM" src="https://github.com/user-attachments/assets/5a3ace63-ddb4-44a5-b93f-73b1bb979e07" />
 
 ---
 
@@ -88,6 +95,9 @@ Model performance is presented in a way that is easy to interpret:
 - A comparison table lets you evaluate models side by side  
 
 The focus is on understanding differences between models.
+
+<img width="777" height="716" alt="Screenshot 2026-04-14 at 11 02 22 PM" src="https://github.com/user-attachments/assets/91432729-b12f-40b8-baeb-dd7dba117a0e" />
+
 
 ---
 
