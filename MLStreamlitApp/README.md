@@ -102,6 +102,15 @@ The app also helps you catch common issues:
 
 If something doesn’t run, it’s usually pointing you toward a data or modeling decision worth revisiting.
 
+## ✅ Required Libraries
+```bash
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+```
+
 ## 🚀 How to Run the App
 
 ### 🌐 Try it online
