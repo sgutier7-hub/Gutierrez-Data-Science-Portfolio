@@ -476,6 +476,9 @@ with tab3:
 
 # DECISION TREE
 
+# I forgot to add this earlier! (I didn't add the plot_tree)
+    from sklearn.tree import DecisionTreeClassifier, plot_tree
+    
 # Runs decision tree only if selected and problem type is classification
     if "Decision Tree (Classifier)" in model_choices and problem_type == "Classification":
         st.subheader("Decision Tree")
@@ -514,6 +517,18 @@ with tab3:
         st.pyplot(fig)
 
         st.text(classification_report(y_test, y_pred, zero_division=0))
+
+# Show the actual decision tree
+        st.subheader("Decision Tree Diagram")
+        fig, ax = plt.subplots(figsize=(14, 8))
+        plot_tree(
+            model,
+            feature_names=X_train_model.columns,
+            class_names=[str(c) for c in model.classes_],
+            filled=True,
+            rounded=True,
+            ax=ax)
+        st.pyplot(fig)
 
 # KNN
 
