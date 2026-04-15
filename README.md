@@ -37,4 +37,23 @@ Projects in this portfolio are organized into the following sections:
 
     This project complements my broader portfolio by combining data cleaning and analytical thinking, which aligns with my interests in law and public policy.
 
-- **[Models](./Models/)** — Statistical and machine learning models  
+- **[Models](./Models/)** — Statistical and machine learning models
+
+  - [Interactive ML Model Explorer 💡](./MLStreamlitApp/README.md)  
+    - An interactive Streamlit app that walks users through the full machine learning workflow 
+
+    **What it does:**  
+    - Lets users upload their own dataset and choose a target variable  
+    - Automatically suggests classification or regression (with option to override)  
+    - Recommends models based on the problem type  
+    - Allows users to adjust key settings (scaling, tree depth, KNN neighbors)  
+    - Displays results through metrics, confusion matrices, ROC curves, and regression plots  
+    - Compares multiple models side-by-side  
+
+    **Why this project matters:**  
+    - Moves beyond static modeling to create a **fully interactive ML experience**  
+    - Shows understanding of the **full ML pipeline** (data prep to model selection to evaluation)  
+    - Emphasizes **interpretability and decision-making**, not just outputs  
+    - Demonstrates ability to design tools that make technical concepts more accessible  
+
+    This project is one of the most comprehensive pieces in my portfolio. It brings together data exploration, modeling, and user experience into a single tool, showing not just that I can build models, but that I understand how and why they work. 
