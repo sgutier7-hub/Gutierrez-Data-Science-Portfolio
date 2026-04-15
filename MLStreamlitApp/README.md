@@ -102,6 +102,25 @@ The app also helps you catch common issues:
 
 If something doesn’t run, it’s usually pointing you toward a data or modeling decision worth revisiting.
 
+## 🚀 How to Run the App
+
+### 🌐 Try it online
+You can use the app directly here — no setup needed:  
+👉 https://gutierrez-data-science-portfolio-qlzv4ghbghhffhfxolraqp.streamlit.app/
+
+---
+
+### 💻 Run locally
+
+1. Start by cloning this repository
+
+```bash
+git clone https://github.com/sgutier7-hub/Gutierrez-Data-Science-Portfolio.git
+cd Gutierrez-Data-Science-Portfolio/MLStreamlitApp
+pip install -r requirements.txt
+streamlit run app.py
+```
+3. Install dependencies
 # References: 
 - [Streamlit Cheat Sheet](https://cheat-sheet.streamlit.app/)
 - [Streamlit Deployment Guide](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
