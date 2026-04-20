@@ -1,8 +1,8 @@
-# Penguin Insights Dashboard 🐧
+# 🐧 Penguin Insights Dashboard 
 
 Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic filters, comparative visualizations, and species-level analysis.
 
-## Purpose of Project 
+## 📁 Purpose of Project  
 
 - The purpose of this project is to build an interactive EDA tool that transforms raw biological measurements into visual insights.
 - This helps users quickly compare species and analyze trait relationships.
@@ -13,7 +13,7 @@ Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic
 - Page 2: Body Variation
 - Page 3: Key Bodily Correlations
 
-## ⚙️ Features
+## ⚙️ Features 
 - Interactive Filtering
      - Filter penguins by species, island, and sex
      - Instantly updates all visualizations
@@ -28,8 +28,15 @@ Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic
      - Intuitive layout for ease of use
 
 
-## 🏃‍♀️ How to Run the App
+## 🏃‍♀️ How to Run the App  
 
 - Make sure to have Streamlit installed: 
     - $ pip install streamlit
 - Streamlit run main.py
+
+## 📕 References  
+- [Pandas Cheat Sheet (PDF)](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+- [Data to Viz](https://www.data-to-viz.com/)
+
+
+
