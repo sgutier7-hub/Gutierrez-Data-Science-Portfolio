@@ -1,10 +1,13 @@
-# Repository Purpose
+# Data Science Portfolio 📊 
 
-This portfolio presents my completed data science projects and provides an overview of my technical  skills.
+## Repository Purpose 
+This repository showcases my data science projects, highlighting my technical skills in data analysis, visualization, and machine learning.  
+
+Each project reflects my ability to transform data into meaningful insights and build tools that make analysis more accessible.
 
 ---
 
-## 📂 Project Table of Contents
+## Project Table of Contents 📂
 
 Projects in this portfolio are organized into the following sections:
 
