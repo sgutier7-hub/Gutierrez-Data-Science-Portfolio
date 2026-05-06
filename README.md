@@ -11,10 +11,7 @@ Each project reflects my ability to transform data into meaningful insights and 
 
 Projects in this portfolio are organized into the following sections:
 
-- **[EDA](./EDA/)** — Exploratory data analysis  
-
-- **[Visualizations](./Visualizations/)** — Data visualization and storytelling
-
+- **[EDA](./EDA/)** — Exploratory data analysis
 
   - [Penguins Insights Dashboard 🐧](./basic_streamlit_app/README.md)
       - An interactive Streamlit app for exploring the Palmer Penguins dataset through  filters and comparative visualizations.
@@ -29,6 +26,8 @@ Projects in this portfolio are organized into the following sections:
       - Shows understanding of **EDA, visualization design, and user experience**
 
       This project complements my portfolio by adding an interactive component, showing that I can design tools that make data exploration more accessible.
+
+- **[Visualizations](./Visualizations/)** — Data visualization and storytelling
     
   - [Federal RD Spending & GDP Analysis 💵](./Tidy_Data_Project/README.md)  
     - This project transforms and analyzes U.S. federal RD spending data. I convert a wide format dataset into tidy form using pandas, then perform exploratory data analysis to examine how RD investment is distributed across departments and how it changes relative to GDP over time.
