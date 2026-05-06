@@ -59,4 +59,25 @@ Projects in this portfolio are organized into the following sections:
     - Emphasizes **interpretability and decision-making**, not just outputs  
     - Demonstrates ability to design tools that make technical concepts more accessible  
 
-    This project is one of the most comprehensive pieces in my portfolio. It brings together data exploration, modeling, and user experience into a single tool, showing not just that I can build models, but that I understand how and why they work. 
+    This project is one of the most comprehensive pieces in my portfolio. It brings together data exploration, modeling, and user experience into a single tool, showing not just that I can build models, but that I understand how and why they work.
+
+  - [Uncovering the Unseen: Unsupervised Learning in Practice 🔎](./MLUnsupervisedApp./README.md)  
+    - An interactive Streamlit application that explores dimensionality reduction and clustering through Principal Component Analysis (PCA), k-means clustering, and hierarchical clustering  
+
+    **What it does:**  
+    - Allows users to upload their own CSV datasets or experiment with built-in datasets 
+    - Automatically preprocesses messy real-world data by converting categorical, boolean, and datetime variables into usable numeric features for modeling  
+    - Cleans and standardizes the dataset so PCA and clustering algorithms compare features based on structure rather than raw scale differences  
+    - Uses Principal Component Analysis (PCA) to compress high-dimensional datasets into lower-dimensional representations that preserve the strongest variation patterns  
+    - Visualizes PCA through 2D projections, loading value tables, variance explained analysis, and cumulative variance elbow charts  
+    - Uses k-means clustering with interactive cluster selection, elbow method evaluation, and silhouette score analysis  
+    - Uses hierarchical clustering using ward linkage to generate nested cluster structure and dendrogram visualizations  
+    - Projects clustering assignments onto PCA scatterplots to make latent group structure easier to interpret  
+    - Includes written interpretation throughout the application so users can understand what the models are actually detecting inside the data rather than only viewing outputs  
+
+    **Why this project matters:**  
+    - Demonstrates understanding of unsupervised learning beyond running prebuilt models by emphasizing preprocessing decisions, variance structure, clustering evaluation, and interpretation  
+    - Highlights technical knowledge of dimensionality reduction, distance-based clustering, hierarchical clustering behavior, variance analysis, and cluster quality metrics  
+    - Emphasizes interpretability by connecting mathematical concepts like PCA loadings, silhouette scores, and dendrogram structure to visual explanations users can actually explore    
+
+    This project became much more than a clustering app for me. I wanted to build something that exposed how unsupervised learning actually behaves beneath the surface instead of treating PCA and clustering like black-box functions that automatically generate insight. A lot of machine learning projects stop at producing charts or labels, but this application focuses on helping users understand *why* certain structure appears and how preprocessing changes the analysis. Building this project forced me to think carefully about the relationship between visualization and interpretation, especially how to make high-dimensional structure understandable without stripping away the complexity that makes these methods powerful in the first place.
