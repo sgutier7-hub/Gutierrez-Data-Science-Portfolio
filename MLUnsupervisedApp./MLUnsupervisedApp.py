@@ -125,15 +125,15 @@ if dataset_choice == "Upload my own CSV":
         df = load_data(uploaded_file)
     else:
         df = None
-
+# calling the sample datasets so users can select them from my folder
 elif dataset_choice == "Sample Dataset 1: Titanic Dataset":
-    df = load_data("sample_dataset_1.csv")
+    df = load_data("titanic-1.csv")
 
 elif dataset_choice == "Sample Dataset 2: Penguins Dataset":
-    df = load_data("sample_dataset_2.csv")
+    df = load_data("penguins.csv")
 
 elif dataset_choice == "Sample Dataset 3: Iris Dataset":
-    df = load_data("sample_dataset_3.csv")
+    df = load_data("Iris.csv")
 # It won't run if there isn't a file uploaded
 if df is not None:
 # Takes the raw dataset and makes everything numeric
