@@ -126,7 +126,7 @@ if dataset_choice == "Upload my own CSV":
     else:
         df = None
 
-elif dataset_choice == "Sample Dataset 1: Titanic Dataset)":
+elif dataset_choice == "Sample Dataset 1: Titanic Dataset":
     df = load_data("sample_dataset_1.csv")
 
 elif dataset_choice == "Sample Dataset 2: Penguins Dataset":
@@ -136,8 +136,6 @@ elif dataset_choice == "Sample Dataset 3: Iris Dataset":
     df = load_data("sample_dataset_3.csv")
 # It won't run if there isn't a file uploaded
 if df is not None:
-# This calls back to earlier, it will read the CSV file and covert it into a pandas dataframe
-    df = load_data(uploaded_file)
 # Takes the raw dataset and makes everything numeric
     numeric_df = clean_data_for_modeling(df)
 # This makes sure there are at least 2 numeric columns
