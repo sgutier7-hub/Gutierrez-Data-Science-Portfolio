@@ -27,6 +27,8 @@ Projects in this portfolio are organized into the following sections:
 
       This project complements my portfolio by adding an interactive component, showing that I can design tools that make data exploration more accessible.
 
+---
+
 - **[Visualizations](./Visualizations/)** — Data visualization and storytelling
     
   - [Federal RD Spending & GDP Analysis 💵](./Tidy_Data_Project/README.md)  
@@ -38,6 +40,8 @@ Projects in this portfolio are organized into the following sections:
     - Moves beyond visualization to interpret results  
 
     This project complements my broader portfolio by combining data cleaning and analytical thinking, which aligns with my interests in law and public policy.
+
+---
 
 - **[Models](./Models/)** — Statistical and machine learning models
 
