@@ -1,9 +1,16 @@
 # Data Science Portfolio 📊 
 
-## Repository Purpose 
-This repository showcases my data science projects, highlighting my technical skills in data analysis, visualization, and machine learning.  
+## Purpose 
+This portfolio reflects my progression from exploratory data analysis and visualization to interactive machine learning applications focused on interpretation, model behavior, and analytical decision-making. Many of these projects were intentionally built as interactive tools rather than static notebooks because I am especially interested in making complex data science methods more transparent, visual, and user-driven.
 
-Each project reflects my ability to transform data into meaningful insights and build tools that make analysis more accessible.
+# ⚡ Portfolio at a Glance
+
+| Project | Focus | Highlights |
+|---|---|---|
+| [Penguins Insights Dashboard 🐧](./EDA/PenguinsDashboard/README.md) | Exploratory Data Analysis | Interactive exploration of the Palmer Penguins dataset through filtering, comparative visualizations, and biological pattern analysis |
+| [Federal RD Spending & GDP Analysis 💵](./Visualizations/FederalRDAnalysis/README.md) | Data Wrangling & Visualization | Tidy-data transformation and longitudinal analysis of U.S. federal R&D spending relative to GDP across departments |
+| [Interactive ML Model Explorer 💡](./Models/MLStreamlitApp/README.md) | Supervised Machine Learning | End-to-end interactive ML workflow with classification, regression, model comparison, hyperparameter adjustment, and evaluation tools |
+| [Uncovering the Unseen 🔎](./MLUnsupervisedApp./README.md) | Unsupervised Machine Learning | Interactive dimensionality reduction and clustering analysis using PCA, K-Means, silhouette evaluation, and hierarchical clustering |
 
 ---
 
