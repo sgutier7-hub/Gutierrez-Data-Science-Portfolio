@@ -15,8 +15,6 @@ Throughout the app, you move through key parts of the workflow:
 - seeing which models fit that type of problem
 - testing models and comparing how they perform
 
-This makes the app feel less like a model generator and more like a guided machine learning learning space.
-
 ### What You Can Do
 
 - Upload your own CSV dataset
@@ -71,34 +69,131 @@ Each model is chosen because it teaches something different about how machine le
 <img width="276" height="297" alt="Screenshot 2026-04-14 at 10 55 28 PM" src="https://github.com/user-attachments/assets/3906decc-9f86-4e54-a178-51d4637115f6" />
 
 ---
-
 ### 🖥️ Interactive Model Tuning
 
-You can adjust key settings and immediately see how they affect results:
+The app allows users to experiment with several important model settings and immediately observe how those choices affect performance.
 
-- Apply **feature scaling** when models depend on distance  
-- Control **decision tree depth** to manage overfitting  
-- Change **KNN neighbors (k)** to shift how predictions are made  
-- Optionally run **GridSearchCV** to automatically find better parameters  
+Users can:
+- apply feature scaling
+- adjust decision tree depth
+- change the number of neighbors used in KNN
+- optionally use GridSearchCV for automated parameter tuning
 
-This turns tuning into something you can *see*, not just guess.
+This helps connect hyperparameter choices to real model behavior rather than treating tuning as trial and error.
 
 <img width="287" height="239" alt="Screenshot 2026-04-14 at 10 57 10 PM" src="https://github.com/user-attachments/assets/5a3ace63-ddb4-44a5-b93f-73b1bb979e07" />
 
 ---
 
-### 📊 Clear, Visual Results
+## ⚙️ Model Training and Hyperparameter Tuning
 
-Model performance is presented in a way that is easy to interpret:
+The app does more than just run machine learning models. It gives users control over important training decisions so they can see how those choices affect performance.
 
-- Classification: accuracy, precision, recall, F1, confusion matrix, ROC curve  
-- Regression: mean squared error, R², and predicted vs. actual plots  
-- A comparison table lets you evaluate models side by side  
+Before training begins, the dataset is cleaned and prepared for modeling:
 
-The focus is on understanding differences between models.
+- categorical variables are converted into numeric form when needed
+- boolean values are converted into integers
+- missing values are handled automatically depending on the workflow
+- features can optionally be standardized using `StandardScaler`
+
+The dataset is then split into training and testing sets so the model can be evaluated on unseen data rather than memorizing the original dataset.
+
+### Adjustable Hyperparameters
+
+Different models include different tuning options because each algorithm learns in a different way.
+
+#### 🌳 Decision Tree
+Users can control:
+
+- **Maximum Depth (`max_depth`)**
+
+This limits how deep the tree can grow.  
+A shallow tree may underfit the data, while a very deep tree can memorize the training set and overfit.
+
+---
+
+#### 👥 K-Nearest Neighbors (KNN)
+Users can control:
+
+- **Number of Neighbors (`k`)**
+
+This changes how many nearby observations the model uses when making predictions.
+
+- Smaller values of `k` make the model more sensitive to local patterns and noise
+- Larger values smooth predictions but may overlook important structure
+
+Because KNN is distance-based, scaling is especially important.
+
+---
+
+#### 📏 Feature Scaling
+
+Users can choose whether to standardize features before training.
+
+Scaling transforms features so they are measured on comparable ranges.  
+This matters for algorithms like:
+
+- KNN
+- Logistic Regression
+
+Without scaling, variables with larger numeric ranges can dominate the model.
+
+---
+
+#### 🔍 GridSearchCV
+
+The app also includes optional hyperparameter optimization using `GridSearchCV`.
+
+This tests multiple parameter combinations automatically and selects the configuration that performs best on the training data.
+
+Rather than manually guessing settings, users can compare how different hyperparameter choices influence model performance.
+
+---
+
+## 📈 Model Outputs and Evaluation
+
+After training, the app generates multiple outputs to help users interpret model behavior and performance.
+
+### Classification Outputs
+
+For classification models, the app displays:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
+- ROC Curve and AUC score
+
+These metrics help show not just whether the model is correct, but *how* it is making mistakes.
+
+For example:
+
+- precision focuses on false positives
+- recall focuses on false negatives
+- the confusion matrix shows where predictions are being misclassified
+
+---
+
+### Regression Outputs
+
+For regression models, the app displays:
+
+- Mean Squared Error (MSE)
+- R² score
+- Predicted vs. Actual scatterplots
+
+These outputs help users evaluate overall model fit and prediction accuracy.
+
+---
+
+### 📊 Model Comparison
+
+When multiple models are selected, the app creates a comparison table so users can evaluate performance side by side.
+
+This makes it easier to recognize that different models may perform well for different reasons rather than assuming there is always one universally “best” model.
 
 <img width="777" height="716" alt="Screenshot 2026-04-14 at 11 02 22 PM" src="https://github.com/user-attachments/assets/91432729-b12f-40b8-baeb-dd7dba117a0e" />
-
 
 ---
 
