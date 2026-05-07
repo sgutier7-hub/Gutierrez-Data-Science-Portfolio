@@ -52,7 +52,7 @@ Projects in this portfolio are organized into the following sections:
 
 - **[Models](./Models/)** — Statistical and machine learning models
 
-  - [Interactive ML Model Explorer 💡](./Model/MLStreamlitApp/README.md)  
+  - [Interactive ML Model Explorer 💡](./Models/MLStreamlitApp/README.md)  
     - An interactive Streamlit app that walks users through the full machine learning workflow 
 
     **What it does:**  
@@ -71,7 +71,7 @@ Projects in this portfolio are organized into the following sections:
 
     This project is one of the most comprehensive pieces in my portfolio. It brings together data exploration, modeling, and user experience into a single tool, showing not just that I can build models, but that I understand how and why they work.
 
-  - [Uncovering the Unseen: Unsupervised Learning in Practice 🔎](./Model/MLUnsupervisedApp./README.md)  
+  - [Uncovering the Unseen: Unsupervised Learning in Practice 🔎](./Models/MLUnsupervisedApp./README.md)  
     - An interactive Streamlit application that explores dimensionality reduction and clustering through Principal Component Analysis (PCA), k-means clustering, and hierarchical clustering  
 
     **What it does:**  
