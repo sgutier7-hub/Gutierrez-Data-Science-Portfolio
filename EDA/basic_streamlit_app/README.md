@@ -1,6 +1,6 @@
 # 🐧 Penguin Insights Dashboard 
 
-Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic filters, comparative visualizations, and species-level analysis.
+This Streamlit dashboard explores physical differences among Adelie, Chinstrap, and Gentoo penguins. The app allows users to filter the dataset by species, island, and sex, then view how those choices change the visual results.
 
 <img width="663" height="105" alt="Screenshot 2026-04-20 at 7 19 03 PM" src="https://github.com/user-attachments/assets/3ff087a3-a108-4b56-ba77-fdb70f72150d" />
 
@@ -12,8 +12,12 @@ Interactive Streamlit app for exploring the Palmer Penguins dataset with dynamic
 ## 📚 Table of Contents 
 
 - Page 1: Exploring Our Dataset
+     - This page gives users a broad overview of the filtered dataset. It includes summary metrics and a species count chart.
 - Page 2: Body Variation
+     - This page compares average body mass and flipper length across species and sex. It helps show how physical traits differ among penguin groups.
 - Page 3: Key Bodily Correlations
+     -  This page allows users to choose two numeric traits and compare them in a scatterplot. This makes it easier to see relationships between features such as flipper length and body mass.
+
 
 ## ⚙️ Features 
 - Interactive Filtering
