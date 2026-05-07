@@ -7,10 +7,10 @@ This portfolio reflects my progression from exploratory data analysis and visual
 
 | Project | Focus | Highlights |
 |---|---|---|
-| [Penguins Insights Dashboard 🐧](./EDA/PenguinsDashboard/README.md) | Exploratory Data Analysis | Interactive exploration of the Palmer Penguins dataset through filtering, comparative visualizations, and biological pattern analysis |
-| [Federal RD Spending & GDP Analysis 💵](./Visualizations/FederalRDAnalysis/README.md) | Data Wrangling & Visualization | Tidy-data transformation and longitudinal analysis of U.S. federal R&D spending relative to GDP across departments |
+| [Penguins Insights Dashboard 🐧](./EDA/basic_streamlit_app/README.md) | Exploratory Data Analysis | Interactive exploration of the Palmer Penguins dataset through filtering, comparative visualizations, and biological pattern analysis |
+| [Federal RD Spending & GDP Analysis 💵](./Visualizations/Tidy_Data_Project/README.md) | Data Wrangling & Visualization | Tidy-data transformation and longitudinal analysis of U.S. federal R&D spending relative to GDP across departments |
 | [Interactive ML Model Explorer 💡](./Models/MLStreamlitApp/README.md) | Supervised Machine Learning | End-to-end interactive ML workflow with classification, regression, model comparison, hyperparameter adjustment, and evaluation tools |
-| [Uncovering the Unseen 🔎](./MLUnsupervisedApp./README.md) | Unsupervised Machine Learning | Interactive dimensionality reduction and clustering analysis using PCA, K-Means, silhouette evaluation, and hierarchical clustering |
+| [Uncovering the Unseen 🔎](./Models/MLUnsupervisedApp./README.md) | Unsupervised Machine Learning | Interactive dimensionality reduction and clustering analysis using PCA, K-Means, silhouette evaluation, and hierarchical clustering |
 
 ---
 
@@ -20,7 +20,7 @@ Projects in this portfolio are organized into the following sections:
 
 - **[EDA](./EDA/)** — Exploratory data analysis
 
-  - [Penguins Insights Dashboard 🐧](./basic_streamlit_app/README.md)
+  - [Penguins Insights Dashboard 🐧](./EDA/basic_streamlit_app/README.md)
       - An interactive Streamlit app for exploring the Palmer Penguins dataset through  filters and comparative visualizations.
 
       **What it does:**  
@@ -38,7 +38,7 @@ Projects in this portfolio are organized into the following sections:
 
 - **[Visualizations](./Visualizations/)** — Data visualization and storytelling
     
-  - [Federal RD Spending & GDP Analysis 💵](./Tidy_Data_Project/README.md)  
+  - [Federal RD Spending & GDP Analysis 💵](./Visualizations/Tidy_Data_Project/README.md)  
     - This project transforms and analyzes U.S. federal RD spending data. I convert a wide format dataset into tidy form using pandas, then perform exploratory data analysis to examine how RD investment is distributed across departments and how it changes relative to GDP over time.
 
     **Why this project matters:**  
@@ -52,7 +52,7 @@ Projects in this portfolio are organized into the following sections:
 
 - **[Models](./Models/)** — Statistical and machine learning models
 
-  - [Interactive ML Model Explorer 💡](./MLStreamlitApp/README.md)  
+  - [Interactive ML Model Explorer 💡](./Model/MLStreamlitApp/README.md)  
     - An interactive Streamlit app that walks users through the full machine learning workflow 
 
     **What it does:**  
@@ -71,7 +71,7 @@ Projects in this portfolio are organized into the following sections:
 
     This project is one of the most comprehensive pieces in my portfolio. It brings together data exploration, modeling, and user experience into a single tool, showing not just that I can build models, but that I understand how and why they work.
 
-  - [Uncovering the Unseen: Unsupervised Learning in Practice 🔎](./MLUnsupervisedApp./README.md)  
+  - [Uncovering the Unseen: Unsupervised Learning in Practice 🔎](./Model/MLUnsupervisedApp./README.md)  
     - An interactive Streamlit application that explores dimensionality reduction and clustering through Principal Component Analysis (PCA), k-means clustering, and hierarchical clustering  
 
     **What it does:**  
