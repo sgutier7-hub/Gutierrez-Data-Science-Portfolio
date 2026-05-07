@@ -16,11 +16,15 @@ st.write("""Transform raw data into insight by exploring latent patterns with PC
 
 # BACKGROUND DATASET SETUP 
 
-# This gets streamlit to store uploaded dataset so it doesn't have to keep reloading
-# The app uses pandas to read the CSV file 
+# this is to find the sample csv files
+from pathlib import Path
+
+APP_DIR = Path(__file__).parent
+
+# uses pandas to store the file
 @st.cache_data
-def load_data(uploaded_file):
-    return pd.read_csv(uploaded_file)
+def load_data(file_path):
+    return pd.read_csv(file_path)
 
 # This makes a copy of the dataset so it doesn't change the original dataset
 def clean_data_for_modeling(df):
@@ -104,10 +108,10 @@ def scale_data(data):
     return pd.DataFrame(scaled, columns=data.columns, index=data.index)
 
 # UPLOADING THE DATA
-# this makes the btton in the Streamlit app to upload a CSV file or chose 
 
 st.subheader("Choose a Dataset")
 
+# Makes a button for users to upload file or choose a sample dataset
 dataset_choice = st.radio(
     "Use your own CSV file or try one of the sample datasets:",
     [
@@ -116,24 +120,27 @@ dataset_choice = st.radio(
         "Sample Dataset 2: Penguins Dataset",
         "Sample Dataset 3: Iris Dataset"])
 
+# This makes a dictionary to connect the dataset names 
+# APP_DIR leads to the folder where the streamlit app files exist
+sample_files = {
+    "Sample Dataset 1: Titanic Dataset": APP_DIR / "titanic-1.csv",
+    "Sample Dataset 2: Penguins Dataset": APP_DIR / "penguins.csv",
+    "Sample Dataset 3: Iris Dataset": APP_DIR / "Iris.csv"}
+# Starts without a file uploaded
 uploaded_file = None
-
 if dataset_choice == "Upload my own CSV":
-    uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+# Makes the upload button for only CSV files
+    uploaded_file = st.file_uploader(
+        "Upload a CSV file",
+        type=["csv"])
 
     if uploaded_file is not None:
         df = load_data(uploaded_file)
     else:
         df = None
-# calling the sample datasets so users can select them from my folder
-elif dataset_choice == "Sample Dataset 1: Titanic Dataset":
-    df = load_data("titanic-1.csv")
-
-elif dataset_choice == "Sample Dataset 2: Penguins Dataset":
-    df = load_data("penguins.csv")
-
-elif dataset_choice == "Sample Dataset 3: Iris Dataset":
-    df = load_data("Iris.csv")
+# This is if they chose one of the sample datasets
+else:
+    df = load_data(sample_files[dataset_choice])
 # It won't run if there isn't a file uploaded
 if df is not None:
 # Takes the raw dataset and makes everything numeric
