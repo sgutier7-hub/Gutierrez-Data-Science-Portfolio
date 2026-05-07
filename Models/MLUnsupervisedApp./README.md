@@ -74,9 +74,9 @@ scipy
 
 The app includes:
 
-- Titanic Dataset
-- Penguins Dataset
-- Iris Dataset
+- Titanic Dataset 🚢
+- Penguins Dataset 🐧
+- Iris Dataset 🌸
 
 Users can either upload their own CSV dataset or experiment with one of the built-in datasets.
 
