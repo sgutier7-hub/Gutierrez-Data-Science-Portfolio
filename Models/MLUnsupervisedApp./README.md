@@ -36,40 +36,6 @@ The project emphasizes interpretation alongside modeling by pairing visual outpu
 
 ---
 
-## 🚀 How to Run the App
-
-### 🌐 Try it online
-You can use the app directly here — no setup needed:  
-👉 https://sgutier7-hub-g-modelsmlunsupervisedapp-mlunsupervisedapp-pkx03r.streamlit.app/ 
-
----
-
-### 💻 Run locally
-
-1. Start by cloning this repository
-
-```bash
-git clone https://github.com/sgutier7-hub/Gutierrez-Data-Science-Portfolio.git
-cd Gutierrez-Data-Science-Portfolio/Models/MLUnsupervisedApp.
-streamlit run MLUnsupervisedApp.py
-```
----
-
-# 🏛️ Required Libraries and Versions
-
-Create a `requirements.txt` file with:
-
-```txt
-streamlit
-pandas
-numpy
-scikit-learn
-matplotlib
-scipy
-```
-
----
-
 # 🗃️ Sample Datasets Included
 
 The app includes:
@@ -360,6 +326,40 @@ The application includes interactive visualizations for:
 - silhouette score comparison
 - dendrogram structure
 - PCA-based cluster visualization
+
+---
+
+## 🚀 How to Run the App
+
+### 🌐 Try it online
+You can use the app directly here — no setup needed:  
+👉 https://sgutier7-hub-g-modelsmlunsupervisedapp-mlunsupervisedapp-pkx03r.streamlit.app/ 
+
+---
+
+### 💻 Run locally
+
+1. Start by cloning this repository
+
+```bash
+git clone https://github.com/sgutier7-hub/Gutierrez-Data-Science-Portfolio.git
+cd Gutierrez-Data-Science-Portfolio/Models/MLUnsupervisedApp.
+streamlit run MLUnsupervisedApp.py
+```
+---
+
+# 🏛️ Required Libraries and Versions
+
+Create a `requirements.txt` file with:
+
+```txt
+streamlit
+pandas
+numpy
+scikit-learn
+matplotlib
+scipy
+```
 
 ---
 
