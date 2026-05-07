@@ -55,7 +55,7 @@ streamlit run MLUnsupervisedApp.py
 ```
 ---
 
-# Required Libraries and Versions
+# 🏛️ Required Libraries and Versions
 
 Create a `requirements.txt` file with:
 
@@ -70,7 +70,7 @@ scipy
 
 ---
 
-# Sample Datasets Included
+# 🗃️ Sample Datasets Included
 
 The app includes:
 
@@ -105,7 +105,7 @@ This step is essential because PCA and clustering are distance and variance base
 
 ---
 
-# Machine Learning Models Used
+# ⚙️ Machine Learning Models Used
 
 # 📕 Principal Component Analysis (PCA)
 
@@ -272,13 +272,7 @@ A fixed random state ensures:
 
 ### `n_init = 20`
 
-The application uses:
-
-```python
-n_init = 20
-```
-
-K-Means runs multiple initializations using different centroid starting points and selects the solution with the lowest within-cluster variation. This improves clustering stability and reduces the likelihood of poor local solutions.
+K-means runs multiple initializations using different centroid starting points and selects the solution with the lowest within-cluster variation. This improves clustering stability and reduces the likelihood of poor local solutions.
 
 ---
 
