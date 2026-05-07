@@ -126,7 +126,7 @@ matplotlib
 
 ### 🌐 Try it online
 You can use the app directly here — no setup needed:  
-👉 https://gutierrez-data-science-portfolio-qlzv4ghbghhffhfxolraqp.streamlit.app/
+👉 https://gutierrez-data-science-portfolio-ve2gve3rmvkxlfa5sih9xg.streamlit.app/
 
 ---
 
