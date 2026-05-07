@@ -344,6 +344,7 @@ You can use the app directly here — no setup needed:
 ```bash
 git clone https://github.com/sgutier7-hub/Gutierrez-Data-Science-Portfolio.git
 cd Gutierrez-Data-Science-Portfolio/Models/MLUnsupervisedApp.
+pip install -r requirements.txt
 streamlit run MLUnsupervisedApp.py
 ```
 ---
