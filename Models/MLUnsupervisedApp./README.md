@@ -40,7 +40,7 @@ The project emphasizes interpretation alongside modeling by pairing visual outpu
 
 ### 🌐 Try it online
 You can use the app directly here — no setup needed:  
-👉 https://gutierrez-data-science-portfolio-qlzv4ghbghhffhfxolraqp.streamlit.app/
+👉 https://sgutier7-hub-g-modelsmlunsupervisedapp-mlunsupervisedapp-pkx03r.streamlit.app/ 
 
 ---
 
