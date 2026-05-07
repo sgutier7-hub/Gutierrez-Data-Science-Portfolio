@@ -29,34 +29,24 @@ def load_data(file_path):
 # This makes a copy of the dataset so it doesn't change the original dataset
 def clean_data_for_modeling(df):
     model_df = df.copy()
-# It goes through each column to clean each one
     for col in model_df.columns:
-# This is datetime columns, it converts them into integer timestamps so the models can use the data
+# Converts datetime columns into numeric timestamps
         if pd.api.types.is_datetime64_any_dtype(model_df[col]):
             model_df[col] = model_df[col].astype("int64") // 10**9
-# This converts True/false columns into 0 or 1
+# Converts True/False columns into 0/1
         elif pd.api.types.is_bool_dtype(model_df[col]):
             model_df[col] = model_df[col].astype(int)
-# This converts text columns into numerics 
-        elif model_df[col].dtype == "object" or isinstance(model_df[col].dtype, pd.CategoricalDtype):
-# This tries to convert strings into dates; the coerce is errors so if its an invalid bvalue it becomes NaT
+# Keeps numeric columns as they are
+        elif pd.api.types.is_numeric_dtype(model_df[col]):
+            model_df[col] = model_df[col]
+# Converts any non-numeric column into usable numeric codes
+        else:
             converted_date = pd.to_datetime(model_df[col], errors="coerce")
-# This calculates the percentage of valid dates, so if more than 80% then it'll treat these columns as dates
-# If not more than 80% it will just convert them as regular texts
             if converted_date.notna().mean() > 0.8:
-# Converts dates into numeric timestamps
                 model_df[col] = converted_date.astype("int64") // 10**9
-# This is for converting categorical data into numbers
             else:
                 codes, uniques = pd.factorize(model_df[col])
-# If something is -1 it is missing, so it is converted into NaN so this value doesn't interfere with the models
-                codes = pd.Series(codes).replace(-1, np.nan)
-# This replaces original columns with the new numerical codes  
-                model_df[col] = codes
-
-# Drops anything non-numeric 
-    model_df = model_df.select_dtypes(include=np.number)
-# Returns cleaned dataset
+                model_df[col] = pd.Series(codes, index=model_df.index).replace(-1, np.nan)
     return model_df
 # Converts dtype names into cleaner labels 
 def simplify_dtype(dtype):
@@ -149,7 +139,7 @@ if df is not None:
     if numeric_df.shape[1] < 2:
 # This will show an error message and not run if there is not at least two features
 # The st.stop prevents a crash
-        st.error("Your dataset must include at least two numeric columns for this app to work.")
+        st.error("Your dataset must have at least two usable features after cleaning.")
         st.stop()
 # This creates the five tabs for the app 
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
