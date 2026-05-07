@@ -94,6 +94,8 @@ The preprocessing pipeline:
 - removes remaining non-numeric columns
 - removes rows with missing values
 
+<img width="735" height="474" alt="Screenshot 2026-05-06 at 10 15 35 PM" src="https://github.com/user-attachments/assets/c178299c-aff7-4e1b-a3b4-6197eea7a4eb" />
+
 The app also standardizes all modeling features using `StandardScaler`.
 
 Standardization transforms features so they have:
@@ -145,6 +147,8 @@ The PCA section includes:
 - cumulative variance elbow charts
 - individual vs cumulative variance visualizations
 
+<img width="739" height="638" alt="Screenshot 2026-05-06 at 10 18 07 PM" src="https://github.com/user-attachments/assets/1da7e0e5-57c5-4a50-9f7e-04bbb996f38e" />
+
 ---
 
 ## Hyperparameter Selection
@@ -169,6 +173,9 @@ The app also provides:
 - cumulative variance charts
 - variance explained tables
 - elbow-style variance plots
+
+<img width="744" height="614" alt="Screenshot 2026-05-06 at 10 19 05 PM" src="https://github.com/user-attachments/assets/3137b0dc-2207-4116-b5f9-393b6ad293d2" />
+
 
 These tools help users determine how many components preserve meaningful structure before additional components begin contributing minimal new information.
 
@@ -219,6 +226,9 @@ Choosing k is important because:
 
 The app allows users to compare multiple cluster counts interactively.
 
+<img width="736" height="641" alt="Screenshot 2026-05-06 at 10 20 14 PM" src="https://github.com/user-attachments/assets/59c58a0d-5dc8-40aa-9222-f0b016222ecf" />
+
+
 ---
 
 ## How the App Helps Select k
@@ -232,6 +242,8 @@ Within-Cluster Sum of Squares (WCSS)
 ```
 
 WCSS measures how closely observations fit around their assigned centroid.
+
+<img width="748" height="627" alt="Screenshot 2026-05-06 at 10 19 32 PM" src="https://github.com/user-attachments/assets/d4b7ce88-e483-4e3f-9059-69db4fcad65c" />
 
 Lower WCSS values indicate:
 
@@ -247,6 +259,8 @@ The elbow occurs where additional clusters begin producing only small reductions
 The app also calculates silhouette scores across multiple cluster counts.
 
 The silhouette score measures how well observations fit within their assigned cluster compared to neighboring clusters.
+
+<img width="741" height="628" alt="Screenshot 2026-05-06 at 10 19 50 PM" src="https://github.com/user-attachments/assets/cfd5083b-6809-4bdc-af0e-3ee0b28c12a3" />
 
 Higher silhouette scores generally indicate:
 
@@ -315,7 +329,7 @@ Ward linkage was selected because it generally produces:
 
 ### Number of Clusters
 
-T hierarchical clustering builds the full hierarchy automatically, but the app allows users to select the number of clusters interactively with a slider.
+The hierarchical clustering builds the full hierarchy automatically, but the app allows users to select the number of clusters interactively with a slider.
 
 The application also computes silhouette scores across multiple cluster counts to help evaluate clustering quality and compare grouping structure.
 
@@ -329,6 +343,8 @@ The hierarchical clustering section includes:
 - cluster size tables
 - silhouette score analysis
 - PCA cluster scatterplots
+
+<img width="745" height="343" alt="Screenshot 2026-05-06 at 10 20 39 PM" src="https://github.com/user-attachments/assets/383b6dcb-0867-4344-9cae-ea39f130e612" />
 
 ---
 
