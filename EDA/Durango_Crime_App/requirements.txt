@@ -1,3 +1,9 @@
 streamlit
 geopandas
 pandas
+numpy
+matplotlib
+shapely
+folium
+streamlit-folium
+plotly
