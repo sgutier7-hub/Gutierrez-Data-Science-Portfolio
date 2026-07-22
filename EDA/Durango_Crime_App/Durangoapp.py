@@ -4,6 +4,7 @@ import geopandas as gpd
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from pathlib import Path
 
 # ==========================================
 # 1. CONFIGURACIÓN DE LA PÁGINA Y ESTILO
@@ -162,12 +163,25 @@ def load_spatial_data(filepath: str) -> gpd.GeoDataFrame:
 # ==========================================
 # 3. BÚSQUEDA AUTOMÁTICA DE ARCHIVOS Y UNIÓN
 # ==========================================
-# Busca en la carpeta actual y en la subcarpeta data/ automáticamente
-possible_csv_paths = ["ForDurangoMap.csv", "data/ForDurangoMap.csv"]
-possible_geo_paths = ["durango_municipios.geojson", "data/durango_municipios.geojson"]
+# Directorio base del script actual
+BASE_DIR = Path(__file__).resolve().parent
 
-csv_path = next((p for p in possible_csv_paths if os.path.exists(p)), None)
-geo_path = next((p for p in possible_geo_paths if os.path.exists(p)), None)
+# Rutas dinámicas basadas en la ubicación de Durangoapp.py
+possible_csv_paths = [
+    BASE_DIR / "ForDurangoMap.csv",
+    BASE_DIR / "data" / "ForDurangoMap.csv",
+    "ForDurangoMap.csv",
+    "data/ForDurangoMap.csv",
+]
+possible_geo_paths = [
+    BASE_DIR / "durango_municipios.geojson",
+    BASE_DIR / "data" / "durango_municipios.geojson",
+    "durango_municipios.geojson",
+    "data/durango_municipios.geojson",
+]
+
+csv_path = next((str(p) for p in possible_csv_paths if os.path.exists(p)), None)
+geo_path = next((str(p) for p in possible_geo_paths if os.path.exists(p)), None)
 
 if not csv_path:
     st.error(
@@ -198,8 +212,6 @@ if "CVEGEO" not in gdf_boundaries.columns:
 
 # Unión espacial (inner join) coincidiendo las claves municipales
 merged_gdf = gdf_boundaries.merge(df_crime, on="CVEGEO", how="inner")
-
-
 # ==========================================
 # 4. BARRA LATERAL (FILTROS Y CONTROLES)
 # ==========================================
